@@ -8,3 +8,27 @@ p {
     color: blue;
     font-size: 16pt;
 }
+
+#primera-noticia {
+    color: green;
+    font-size: 12pt;
+}
+
+#segunda-noticia{
+    /*color: darkmagenta;*/
+    font-size: 12pt;
+}
+
+.encabezado {
+    font-size: 24pt;
+    text-transform: uppercase;
+}
+
+* .warning {
+    color: red;
+}
+
+/*Asi podemos afectar diferentes elementos o selectores de una misma manera */
+.autor, .fecha, .ubicacion, h1, #segunda-noticia {
+    text-decoration: underline;
+}
