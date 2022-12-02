@@ -28,3 +28,28 @@
     background-image: url("fondo.jpg"); 
     background-position: center;
 }
+
+/* Tamaños */
+
+.ancho {
+    background-color: aquamarine;
+    width: 100px ;
+}
+
+.alto {
+    background-color: aquamarine;
+    height: 200px;
+}
+
+.tarjeta{
+    border-style: solid;
+    border-color: rgb(150, 150, 150);
+    border-width: 1px;
+   /* border-top: none;*/
+   /*padding: 10px 20px 30px 40px; Los valores se asignan en sentido de las agujas del reloj, primero top, despues derecha, despues bottom, despues izquierda,*/
+   padding: 10px 20px;/*Este formato de padding es el que mas se suele utilizar*/
+    /*margin: 10px 20px 30px 40px; Los valores se asignan en sentido de las agujas del reloj, primero top, despues derecha, despues bottom, despues izquierda,*/
+   margin: 10px 20px;
+  
+
+}
