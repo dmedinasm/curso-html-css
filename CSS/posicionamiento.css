@@ -1,0 +1,52 @@
+div {
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+/* Posicionamiento relativo - se posiciona en relacion al posicionamiento
+original*/
+.relative{
+    position: relative;
+    left: 80px;
+    margin-left: 10px;
+}
+
+
+/* Posicionamiento fixed - Se posiciona en relacion a la pantalla*/
+.fixed{
+    position: fixed;
+    bottom: 0px;/*Que este siempre abajo del todo*/
+    left: 0px;/* Que este simepre a la izquierda del todo*/
+    background-color: greenyellow;
+    z-index: 10;/* Para especificar como es su posicionamiento por arriba
+    o por debajo de otros elementos*(Los elementos fijos casi siempre estan por encima de otros elementos)*/
+}
+
+/*Posicionamiento absoluto*/
+
+.absolute {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: white;
+}
+
+
+
+.relative.container {
+    width: 300px;
+    height: 800px;
+    background-color: blue;
+}
+
+/* De esta manera podemos posicionar un menu arriba del todo y que siempre este visible*/
+/*Posicionamiento pegajoso - Al hacer scroll modifica su posicionamiento relative->fixed*/
+.sticky {
+    position: sticky;
+    background-color: darksalmon;
+    top: 0px;
+    color: white;
+    z-index: 2;
+}
