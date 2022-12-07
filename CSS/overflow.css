@@ -1,0 +1,35 @@
+.container-hidden {
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    padding: 15px;
+    overflow: hidden ;
+}
+
+.container-scroll {
+    overflow: scroll;
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.container-visible {
+    overflow: visible;
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.container-auto {
+    overflow: auto;
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    padding: 15px;
+}

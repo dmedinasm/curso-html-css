@@ -23,8 +23,14 @@
 }
 
 .contenido-3{
+    text-align: center;
     background-color: white;
     /*height: 200px;*/
     width: 100px;
+    height: 50px;
     border: 1px solid blue;
+}
+
+.contenido-3 :first-child {
+    margin: 10px;
 }
