@@ -9,6 +9,10 @@
     background-color: aquamarine;
 }
 
+div{
+    background-color: blue;
+}
+
 span.frase{
     font-style: italic;
 }
@@ -43,6 +47,7 @@ span.frase::after{
 }
 
 .listado{
+    padding: 50px;
     list-style-type: square;
     margin: 20px;
 }

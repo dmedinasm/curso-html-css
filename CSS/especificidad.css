@@ -1,0 +1,15 @@
+#hid{
+    color: aquamarine;
+}
+
+.h1-clase{
+    color: blue;
+}
+
+h1{
+    color: green !important;/*EVITAR EN LA MEDIDA DE LO POSIBLE*/
+}
+
+p{
+    color: red;
+}
