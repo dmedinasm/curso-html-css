@@ -1,0 +1,25 @@
+.cajaboton{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 300px;
+    height: 100px;
+    background-color: bisque;
+}
+
+.boton{
+    margin: 30px;
+}
+
+.boton::after{
+    content: 'Pasa por encima';
+}
+
+.boton:hover{
+    color: white;
+    background-color: green;
+}
+
+.boton::after{
+    content: '!Hecho!';
+}
