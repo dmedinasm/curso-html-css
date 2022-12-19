@@ -3,6 +3,11 @@
 
 *{
     font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+html{
+    background-color: #161717;
 }
 
 .container{
@@ -64,6 +69,10 @@
     cursor: pointer;
 }
 
+.twitter-btn picture{
+    color: #8b8b8b;
+}
+
 .twitter-btn:hover{
     background-color: #ddd;
 }
@@ -111,7 +120,7 @@ label span {
 
 label input{
     width: 80%;
-    background-color: #e1e1dc;
+    background-color: #212121;
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
@@ -122,13 +131,13 @@ label input{
 }
 
 label input:hover{
-    background-color: white;
+    background-color: #454045;
     border: 1px solid #e1e1dc;
     box-shadow: 0 0 4px #eb50ff4f;
 }
 
 label input:focus{
-    background-color: white;
+    background-color: #454045;
     border: 1px solid #e1e1dc;
     box-shadow: 0 0 4px #eb50ff4f;
 }
