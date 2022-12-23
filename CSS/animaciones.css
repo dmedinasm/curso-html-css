@@ -7,14 +7,15 @@
 .hijo{
     width: 50%;
     height:50%;
-    background-color: beige;
-    /*transition: transform 1s ease-in 2s ;*/
+    background-color: orangered;
+    /*transition: transform 1s(duration) ease-in(forma en que se mueve) 2s(delay) ;*/
+    animation: traslation 4s ease-in-out infinite/*Esto se utiliza para spiners infinitos mientras esta cargando*/ alternate /*Esto se utiliza mucho tambien animacion en reversa*/forwards;/*Aqui no se usa con hover s va a ejecutar de forma infinita*/
 }
 
 .padre:hover .hijo{
     /*transform: translateX(100%);*/
     /*background-color: blueviolet;*/
-    animation: traslation 10s ease-in-out forwards;
+   animation-play-state: paused;/*Parar la animacion cuando pase el mouse*/
 }
 
 @keyframes traslation{
@@ -39,6 +40,8 @@
 
     100%{
         background-color: beige;
-        transform: translateY(0%);
+        transform: translateX(0%) translateY(0%);
     }
 } 
+
+/*OJO: Evitar utilizar muchas animaciones, puede saturar las webs*/
