@@ -1,0 +1,41 @@
+h1{
+    color: red;
+    font-size: 4rem;
+}
+
+p{
+    color: black;
+    font-size: 2rem;
+}
+
+/*@media screen and (max-width: 576px){/* Aqui le estoy diciendo que si vas a imprimir y el width es menor que 576px entonces utilice el estilo especificado*/
+/*@media (max-width: 576px){
+    h1{
+        color: blue;
+    }
+    
+}*/
+
+@media (min-width: 576px){
+    h1{
+        color: green;
+    }
+}
+
+@media (min-width: 995px){
+    h1{
+        color: blue;
+    } 
+}
+
+@media (orientation: landscape) and (min-height: 600px){/*Se tienen que cumplir las dos condiciones para que ocurra el estilo*/
+    p{
+        color: brown;
+    }
+}
+
+@media (max-height: 500px), (min-width: 1100px){/*Se tiene que cumplir cualquiera de las dos condiciones para que ocurra el estilo*/
+    h1{
+        color: darksalmon;
+    }
+}
