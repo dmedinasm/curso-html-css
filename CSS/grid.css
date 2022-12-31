@@ -8,7 +8,7 @@
     /*grid-template-columns: 25px 10rem 2rem 25vw;*/
     grid-template-columns: 1fr 1fr 2fr;/* Para trabajar las columnas*/
     grid-template-rows: 200px 5rem 100px;/* Para trabajar las filas*/
-   /* grid-template-areas: 'head head head' 'aside main aside' 'footer footer footer';*/
+    grid-template-areas: 'head head head' 'main aside main' 'footer footer footer';
 }
 
 .item{
@@ -19,13 +19,13 @@
 }
 
 .item1{
-    grid-area: head;
-   /* grid-column: 1/3;*/
-   grid-column: 1 / span 2;
+    grid-area: 'head';
+    /*grid-column: 1 / 3;*/
+   grid-column: 2 / span 2;
 }
 
 .item9{
-    grid-area: 2 / 3 / 4 / 5;
+    grid-area: 2 / 1 / 4 / 2;
     /*grid-area: filainicio/colinicio, /filafin/columnafin*/
 }
 
