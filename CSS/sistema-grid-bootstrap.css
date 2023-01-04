@@ -1,0 +1,7 @@
+div{
+    border: 1px solid;
+}
+
+div span {
+    background-color: aqua;
+}
