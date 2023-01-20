@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container mx-15 py-4">
+        <div class="bg-light p-5 rounded-3">
+            <div class=" container-fluid py-5">
+                <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+                <p class="fs-4 col-md-8">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+                <button type="button" class="btn btn-lg btn-primary" data-bs-toggle="modal" data-bs-target="#modal_window">
+                    Lanzar Ventana Modal
+                  </button>
+            </div>
+            <div class="modal fade" id="modal_window" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Welcome to Modal Window</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      Hola, Me ha lanzado el Jumbotron!!!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </div>
+    <div class="d-flex flex-column  w-50 mt-5">
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label"><strong>Nombre</strong></label>
+                <input type="text" class="form-control" placeholder="Tu nombre" id="nombre" />
+                <small class="form-text">Introduce tu nombre de pila</small>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label"><strong>Telefono</strong></label>
+                <input type="number" class="form-control" placeholder="Tu numero de telefono" id="phone" />
+                <small class="form-text">Introduce tu numero telefonico</small>
+            </div>
+            <div class="mb-3">
+                <div class="mb-3">
+                    <label for="textarea" class="form-label"><strong>Mensaje</strong></label>
+                    <textarea class="form-control" id="textarea" rows="3"></textarea>
+                  </div>
+            </div>  
+        </form>
+      </div>
+      <div class="card mt-5" style="width: 40rem;">
+        <div class="card-body">
+          <h5 class="card-title">Daniel Miguel Medinas Mateo</h5>
+          <p class="card-text">Frontend Developer Junior. Skills:HTML, CSS, Javascript. React</p>
+          <a href="#" class="btn btn-primary">Ir al Perfil de LinkedIn</a>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
