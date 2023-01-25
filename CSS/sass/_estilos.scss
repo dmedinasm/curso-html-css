@@ -1,3 +1,5 @@
+@use "mixins";
+
 body{
     padding: 0;
     margin: 0;
@@ -5,18 +7,18 @@ body{
 
 .container{
    width:  100%;
-    background-color: azure ;
+    background-color: blanchedalmond ;
     min-height: 100vh;
     padding: 0.5rem;
 }
 
 h1{
     margin: 0;
-    @include texto-formato();
+    @include mixins.texto-formato();
 }
 
 p{
-    @include texto-formato(#666666);
+    @include mixins.texto-formato(#666666);
 }
 
 /*Ejemplo de como acceder a listas en css con scss*/
