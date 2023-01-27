@@ -58,4 +58,23 @@ p {
   color: white;
 }
 
+/*longitud de la cadena*/
+/* Recortar un string desde al indice 5 hasta el indice 9*/
+/*Convertir texto en mayusculas*/
+/* Convertir texto en minuscula*/
+/* Generar un id unico*/
+/* Constante euler*/
+/*Constante pi*/
+/*Redondea al numero entero mas proximo por arriba, en este caso 5*/
+/* Comprueba si un valor esta dentro del rango, si es menor que el valor minimo del rango, devuelve ese minimo, si es mayor que el valor maximo del rango devuelve el maximo*/
+/*Redondea al numero entero mas proximo por debajo, en este cas 4*/
+/* Devuelve el maximo de un rango de valores*/
+/* Devuelve el minimo de un rango de valores*/
+/* Devuelve el valor del entero mas cercano, en este caso 4*/
+/* Devuelve el valor del entero mas cercano, en este caso 5*/
+/* Devuelve el valor aboluto*/
+/*Calcular potencia*/
+/* Creamos una lista*/
+/* Agregamos un valor al final de la lista que creamos y definimos un separador como espacio*/
+
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,7 @@
+/////Funciones con cadenas de texto
 @use "sass:string";
+@use "sass:math";
+@use "sass:list";
 
 @debug "hola";
 
@@ -6,6 +9,49 @@
 
 $string:"Helvetica";
 
-$newString: string.insert($string, " bold", 9);
+$newString: string.insert($string, " bold", 10);
 
 @debug $newString;
+
+@debug string.quote("Helvetica");
+
+@debug string.length($newString);/*longitud de la cadena*/
+
+@debug string.slice($newString, 5, 9);/* Recortar un string desde al indice 5 hasta el indice 9*/
+
+@debug string.to-upper-case("Roboto Mono");/*Convertir texto en mayusculas*/
+@debug string.to-lower-case("Roboto Mono");/* Convertir texto en minuscula*/
+
+@debug string.unique-id();/* Generar un id unico*/
+
+//////////Funciones con numeros
+
+
+
+@debug math.$e;/* Constante euler*/
+
+@debug math.$pi;/*Constante pi*/
+
+@debug math.ceil(4.2);/*Redondea al numero entero mas proximo por arriba, en este caso 5*/
+
+@debug math.clamp(0, 11, 10);/* Comprueba si un valor esta dentro del rango, si es menor que el valor minimo del rango, devuelve ese minimo, si es mayor que el valor maximo del rango devuelve el maximo*/
+
+@debug math.floor(4.3);/*Redondea al numero entero mas proximo por debajo, en este cas 4*/
+
+@debug math.max(3, 4, 6, 10 , 399);/* Devuelve el maximo de un rango de valores*/
+@debug math.min(3, 4, 6, 10 , 399);/* Devuelve el minimo de un rango de valores*/
+
+@debug math.round(4.4);/* Devuelve el valor del entero mas cercano, en este caso 4*/
+
+@debug math.round(4.7);/* Devuelve el valor del entero mas cercano, en este caso 5*/
+
+@debug math.abs(4);/* Devuelve el valor aboluto*/
+@debug math.pow(2, 12);/*Calcular potencia*/
+
+/////Funciones con listas
+
+$lista1: 10px, 10px, 0px, 15px; /* Creamos una lista*/
+@debug $lista1;
+
+@debug list.append($lista1, 25px, space);/* Agregamos un valor al final de la lista que creamos y definimos un separador como espacio*/
+
