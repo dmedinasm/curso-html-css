@@ -2,6 +2,8 @@
 @use "sass:string";
 @use "sass:math";
 @use "sass:list";
+@use "sass:selector";
+@use "sass:color";
 
 @debug "hola";
 
@@ -54,4 +56,57 @@ $lista1: 10px, 10px, 0px, 15px; /* Creamos una lista*/
 @debug $lista1;
 
 @debug list.append($lista1, 25px, space);/* Agregamos un valor al final de la lista que creamos y definimos un separador como espacio*/
+
+$border-custom: solid 1px #ccc; /*Esto realmente es una lista separada por espacios*/
+
+@debug list.index($border-custom, 1px);/* Retorna el indice del elemento 1px en la lista*/
+@debug list.index($border-custom, solid);
+@debug list.index($border-custom, 2px);/* Devuelve null porque el elemento no esta en la lista*/
+
+//$border-2: [solid, 1px, #ccc];
+//@debug list.is-bracketed($border-2);
+
+@debug list.join($lista1, $border-custom);/* Crear una lista a partir de otras*/
+
+@debug list.length(list.join($lista1, $border-custom));/* Devuelve longitud de una lista*/
+
+@debug list.separator(list.length(list.join($lista1, $border-custom)));/* Pone el separador de la lista*/
+
+@debug list.separator($lista1);
+
+@debug list.set-nth($border-custom,2, 2px);
+
+
+////Funciones de Selector
+$selector-1: "a";
+$selector-2: ".disabled";
+@debug selector.append($selector-1, $selector-2);
+
+///Funciones de color
+
+$color: rgb(226, 81, 255);
+@debug color.adjust($color, $red: -50, $alpha:0.5);
+$color-2: rgb(176, 81, 255, 0.5);
+
+@debug color.complement($color);
+
+$color-3: #6eff51;
+
+@debug darken($color, 20%);
+$color-dark: #c300ea; /*Oscurecer color*/
+@debug lighten($color, 20%);
+$color-lighten:#f3b7ff; /*Aclarar color*/
+
+@debug color.red($color);
+@debug color.green($color);
+@debug color.blue($color);
+
+@debug color.hue($color);//Obtiene el angulo de la paleta de colores
+
+@debug color.invert($color);/*Color invertido de el que le pasemos por parametro*/
+
+$color-inv:#1dae00;
+
+
+
 

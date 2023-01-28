@@ -76,5 +76,14 @@ p {
 /*Calcular potencia*/
 /* Creamos una lista*/
 /* Agregamos un valor al final de la lista que creamos y definimos un separador como espacio*/
+/*Esto realmente es una lista separada por espacios*/
+/* Retorna el indice del elemento 1px en la lista*/
+/* Devuelve null porque el elemento no esta en la lista*/
+/* Crear una lista a partir de otras*/
+/* Devuelve longitud de una lista*/
+/* Pone el separador de la lista*/
+/*Oscurecer color*/
+/*Aclarar color*/
+/*Color invertido de el que le pasemos por parametro*/
 
 /*# sourceMappingURL=styles.css.map */
