@@ -37,7 +37,7 @@
   font-size: 0.75rem;
   list-style: none;
   display: inline;
-  margin: 0.2rem;
+  margin-right: 2rem;
 }
 .main-menu li a {
   color: #000000;
@@ -121,7 +121,7 @@ body {
   padding: 3rem;
   width: 100%;
   align-items: center;
-  max-width: 768px;
+  max-width: 992px;
   margin: auto;
 }
 .sec-home .home-cta {
@@ -141,8 +141,11 @@ body {
   padding: 3rem;
   width: 100%;
   align-items: center;
-  max-width: 768px;
+  max-width: 992px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .sec-features .intro {
   text-align: center;
@@ -157,23 +160,30 @@ body {
 }
 .sec-features .features {
   display: flex;
-  /*.image{
-
-  }*/
+  gap: 1rem;
+  align-items: center;
 }
 .sec-features .features .text {
-  max-width: 40%;
+  padding: 2rem 0;
+  flex: 1;
 }
 .sec-features .features .text .feature {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+.sec-features .features .text .feature .description {
+  max-width: 20rem;
+  margin-left: 1rem;
+}
 .sec-features .features .text .feature .description .desc-title {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 .sec-features .features .text .feature .description .description-text {
   font-size: 1rem;
+}
+.sec-features .features .image img {
+  max-width: 20rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
