@@ -125,3 +125,27 @@ body{
     }
     
 }
+
+.sec-onboarding{
+        .intro{
+        @extend .sec-features, .intro;
+           p{
+            color: rgba(0, 0, 0, 0.4);
+           }
+        }
+        .steps{
+            padding: 0 7rem 5rem 7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .step-separator{
+            flex: 1;
+            border-top: 2px solid #ddd;
+            margin: 0 1rem;
+            &:hover{
+                border-top: 2px solid components.$color-main;
+            }
+        }
+        
+}
