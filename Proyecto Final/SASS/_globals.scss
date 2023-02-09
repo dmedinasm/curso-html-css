@@ -149,3 +149,22 @@ body{
         }
         
 }
+
+.sec-footer-cta{
+    background-color: components.$color-footer;
+    padding: 5rem;
+    background-image: url(../Assets/img/bckfooter-image.png);
+    background-repeat: no-repeat;//Evita que la imagen de fondo se repita a lo largo del background
+    background-position: 100%; 
+    .footer-cta{
+        width: 50%;
+        .cta-title{
+            font-size: 2rem;
+        }
+    
+        .cta-description{
+            font-size: 1.1rem;
+        }
+    }
+
+}
