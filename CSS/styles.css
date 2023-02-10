@@ -1,17 +1,102 @@
-.btn, .btn-2 {
+.btn-main, .btn-main-s {
+  background-color: #0075ff;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
   border: none;
-  padding: 0.25rem 0.5rem;
-  color: #2b2b2b;
+  border: solid 1px #0075ff;
 }
-.btn:hover, .btn-2:hover {
-  background-color: cyan;
-  color: red;
-  cursor: pointer;
+.btn-main:hover, .btn-main-s:hover {
+  background-color: white;
+  color: #0075ff;
+}
+.btn-main-s {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
 }
 
-.btn-2 {
-  margin: 0.5rem;
+.btn-sec, .btn-sec-s {
+  padding: 0.5rem 1.5rem;
   border-radius: 0.25rem;
+  color: #000000;
+  background-color: white;
+  border: none;
+}
+.btn-sec:hover, .btn-sec-s:hover {
+  color: #888;
+}
+.btn-sec-s {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+
+.main-menu {
+  margin-bottom: 0;
+}
+.main-menu li {
+  font-size: 0.75rem;
+  list-style: none;
+  display: inline;
+  margin-right: 2rem;
+}
+.main-menu li a {
+  color: #000000;
+  text-decoration: none;
+}
+.main-menu li a:hover {
+  text-decoration: underline;
+}
+
+.icon-sm i {
+  font-size: 1.25rem;
+  border: solid 1px #000000;
+  padding: 0.4rem 0.65rem;
+  color: #0075ff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3333333333);
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+}
+.benefit i {
+  color: #0075ff;
+  font-size: 7.5rem;
+  text-align: center;
+}
+.benefit .description .title {
+  font-size: 2rem;
+  text-align: center;
+}
+.benefit .description .text {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+.benefit .cta {
+  margin-top: 3rem;
+  color: #0075ff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.icon-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.icon-desc .icon {
+  color: #0075ff;
+  padding: 0;
+  font-size: 10rem;
+}
+.icon-desc .title {
+  margin-top: -2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 body {
@@ -19,69 +104,151 @@ body {
   margin: 0;
 }
 
-.container {
+.nav {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
-  background-color: blanchedalmond;
-  min-height: 100vh;
-  padding: 0.5rem;
+  height: 4rem;
+  border-bottom: solid 1px #ddd;
+  align-items: center;
 }
 
-h1 {
-  margin: 0;
-  color: #2b2b2b;
-  text-transform: uppercase;
-  width: 50rem;
-  background-color: #f1f1f1;
+.logo img {
+  max-width: 7rem;
 }
 
-p {
-  color: #2b2b2b;
-  text-transform: uppercase;
-  width: 50rem;
-  background-color: #666666;
+.sec-home {
+  display: flex;
+  padding: 3rem;
+  width: 100%;
+  align-items: center;
+  max-width: 992px;
+  margin: auto;
+}
+.sec-home .home-cta {
+  width: 50%;
+}
+.sec-home .home-cta .home-cta-text {
+  color: #0075ff;
+  font-weight: 600;
+}
+.sec-home .home-cta .home-title {
+  padding: 0;
+  width: 20rem;
+  font-size: 3rem;
 }
 
-/*Ejemplo de como acceder a listas en css con scss*/
-.listado {
-  width: 10rem;
-  background-color: aquamarine;
-  padding: 0.5rem;
+.sec-features, .sec-onboarding .intro, .sec-onboarding .sec-benefits, .sec-benefits {
+  padding: 3rem;
+  width: 100%;
+  align-items: center;
+  max-width: 992px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.listado ul {
-  margin: 0 0.5rem;
+.sec-features .intro, .sec-onboarding .intro .intro, .sec-onboarding .intro .sec-benefits, .sec-features .sec-benefits, .sec-benefits .intro, .sec-benefits .sec-benefits {
+  text-align: center;
 }
-.listado ul li {
-  list-style: none;
-  /*En este ejemplo definimos el hover mediante la anidacion diferente a css puro*/
+.sec-features .intro h3, .sec-onboarding .intro .intro h3, .sec-onboarding .intro .sec-benefits h3, .sec-features .sec-benefits h3, .sec-benefits .intro h3, .sec-benefits .sec-benefits h3 {
+  font-size: 1.8rem;
 }
-.listado ul li:hover {
+.sec-features .intro p, .sec-onboarding .intro .intro p, .sec-onboarding .intro .sec-benefits p, .sec-features .sec-benefits p, .sec-benefits .intro p, .sec-benefits .sec-benefits p {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+}
+.sec-features .features, .sec-onboarding .intro .features, .sec-benefits .features {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.sec-features .features .text, .sec-onboarding .intro .features .text, .sec-benefits .features .text {
+  padding: 2rem 0;
+  flex: 1;
+}
+.sec-features .features .text .feature, .sec-onboarding .intro .features .text .feature, .sec-benefits .features .text .feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sec-features .features .text .feature .description, .sec-onboarding .intro .features .text .feature .description, .sec-benefits .features .text .feature .description {
+  max-width: 20rem;
+  margin-left: 1rem;
+}
+.sec-features .features .text .feature .description .desc-title, .sec-onboarding .intro .features .text .feature .description .desc-title, .sec-benefits .features .text .feature .description .desc-title {
+  font-size: 1.15rem;
+}
+.sec-features .features .text .feature .description .description-text, .sec-onboarding .intro .features .text .feature .description .description-text, .sec-benefits .features .text .feature .description .description-text {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.sec-features .features .image img, .sec-onboarding .intro .features .image img, .sec-benefits .features .image img {
+  max-width: 20rem;
+}
+
+.sec-benefits {
+  border-top: solid 1px #ddd;
+}
+.sec-benefits .benefit-cards {
+  width: 100%;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.sec-kpis {
+  width: 100%;
+  background-color: #0075ff;
   color: white;
+  padding: 4rem;
+}
+.sec-kpis .kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-kpis .kpi .number {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.sec-kpis .kpi .desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6666666667);
 }
 
-/*longitud de la cadena*/
-/* Recortar un string desde al indice 5 hasta el indice 9*/
-/*Convertir texto en mayusculas*/
-/* Convertir texto en minuscula*/
-/* Generar un id unico*/
-/* Constante euler*/
-/*Constante pi*/
-/*Redondea al numero entero mas proximo por arriba, en este caso 5*/
-/* Comprueba si un valor esta dentro del rango, si es menor que el valor minimo del rango, devuelve ese minimo, si es mayor que el valor maximo del rango devuelve el maximo*/
-/*Redondea al numero entero mas proximo por debajo, en este cas 4*/
-/* Devuelve el maximo de un rango de valores*/
-/* Devuelve el minimo de un rango de valores*/
-/* Devuelve el valor del entero mas cercano, en este caso 4*/
-/* Devuelve el valor del entero mas cercano, en este caso 5*/
-/* Devuelve el valor aboluto*/
-/*Calcular potencia*/
-/* Creamos una lista*/
-/* Agregamos un valor al final de la lista que creamos y definimos un separador como espacio*/
-/*Esto realmente es una lista separada por espacios*/
-/* Retorna el indice del elemento 1px en la lista*/
-/* Devuelve null porque el elemento no esta en la lista*/
-/* Crear una lista a partir de otras*/
-/* Devuelve longitud de una lista*/
-/* Pone el separador de la lista*/
-/*Oscurecer color*/
-/*Aclarar color*/
-/*Color invertido de el que le pasemos por parametro*//*# sourceMappingURL=styles.css.map */
+.sec-onboarding .intro p, .sec-onboarding .sec-benefits p {
+  color: rgba(0, 0, 0, 0.4);
+}
+.sec-onboarding .steps {
+  padding: 0 7rem 5rem 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec-onboarding .step-separator {
+  flex: 1;
+  border-top: 2px solid #ddd;
+  margin: 0 1rem;
+}
+.sec-onboarding .step-separator:hover {
+  border-top: 2px solid #0075ff;
+}
+
+.sec-footer-cta {
+  background-color: #f4f8fe;
+  padding: 5rem;
+  background-image: url(../Assets/img/bckfooter-image.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+.sec-footer-cta .footer-cta {
+  width: 50%;
+}
+.sec-footer-cta .footer-cta .cta-title {
+  font-size: 2rem;
+}
+.sec-footer-cta .footer-cta .cta-description {
+  font-size: 1.1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
